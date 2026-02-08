@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Website with Spline</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2 class="logo">PORTFOLIO</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="text">
+      <h1>3D Website</h1>
+      <p>Built with HTML, CSS & Spline</p>
+      <button>Explore</button>
+    </div>
+
+    <!-- SPLINE 3D -->
+    <spline-viewer 
+      class="spline"
+      url="https://prod.spline.design/PK27254qpjZEMGA5/scene.splinecode">
+    </spline-viewer>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      This website demonstrates how to integrate interactive 3D elements
+      using Spline into a modern web experience.
+    </p>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section dark">
+    <h2>My Work</h2>
+    <p>
+      Clean design, smooth animations, and immersive 3D storytelling.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 3D Portfolio</p>
+  </footer>
+
+  <!-- SPLINE SCRIPT -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
